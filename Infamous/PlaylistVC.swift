@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PlaylistVC.swift
 //  Infamous
 //
 //  Created by Andrew Carvajal on 3/15/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlaylistVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
