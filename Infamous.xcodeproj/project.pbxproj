@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4936AB2E1E79BF9900AEF73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936AB2D1E79BF9900AEF73A /* AppDelegate.swift */; };
-		4936AB301E79BF9900AEF73A /* PlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936AB2F1E79BF9900AEF73A /* PlaylistVC.swift */; };
 		4936AB331E79BF9900AEF73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4936AB311E79BF9900AEF73A /* Main.storyboard */; };
 		4936AB351E79BF9900AEF73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4936AB341E79BF9900AEF73A /* Assets.xcassets */; };
 		4936AB381E79BF9A00AEF73A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4936AB361E79BF9A00AEF73A /* LaunchScreen.storyboard */; };
 		4936AB431E79BF9A00AEF73A /* InfamousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936AB421E79BF9A00AEF73A /* InfamousTests.swift */; };
 		4936AB4E1E79BF9A00AEF73A /* InfamousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936AB4D1E79BF9A00AEF73A /* InfamousUITests.swift */; };
+		49F6E00B1E7B4E5B00339A51 /* PlaylistTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6E00A1E7B4E5B00339A51 /* PlaylistTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		4936AB2A1E79BF9900AEF73A /* Infamous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infamous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4936AB2D1E79BF9900AEF73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4936AB2F1E79BF9900AEF73A /* PlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistVC.swift; sourceTree = "<group>"; };
 		4936AB321E79BF9900AEF73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4936AB341E79BF9900AEF73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4936AB371E79BF9A00AEF73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		4936AB491E79BF9A00AEF73A /* InfamousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfamousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4936AB4D1E79BF9A00AEF73A /* InfamousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfamousUITests.swift; sourceTree = "<group>"; };
 		4936AB4F1E79BF9A00AEF73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F6E00A1E7B4E5B00339A51 /* PlaylistTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 		4936AB5B1E79D8CF00AEF73A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4936AB2F1E79BF9900AEF73A /* PlaylistVC.swift */,
+				49F6E00A1E7B4E5B00339A51 /* PlaylistTVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -286,8 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4936AB301E79BF9900AEF73A /* PlaylistVC.swift in Sources */,
 				4936AB2E1E79BF9900AEF73A /* AppDelegate.swift in Sources */,
+				49F6E00B1E7B4E5B00339A51 /* PlaylistTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +536,7 @@
 				4936AB541E79BF9A00AEF73A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4936AB551E79BF9A00AEF73A /* Build configuration list for PBXNativeTarget "InfamousTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +545,7 @@
 				4936AB571E79BF9A00AEF73A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4936AB581E79BF9A00AEF73A /* Build configuration list for PBXNativeTarget "InfamousUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +554,7 @@
 				4936AB5A1E79BF9A00AEF73A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
